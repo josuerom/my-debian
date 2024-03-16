@@ -1,0 +1,40 @@
+{
+    "currentIndex": 0,
+    "tabs": [
+        {
+            "checkerIndex": 0,
+            "customCheckers": [
+            ],
+            "customCompileCommand": "",
+            "customTimeLimit": -1,
+            "editorAnchor": 56,
+            "editorCursor": 56,
+            "editorText": "// Powered by CP Editor (https://cpeditor.org)\n// author:  josuerom\n// created: 10/03/2024 14:49:06\n\n#include <bits/stdc++.h>\nusing namespace std;\n\n#define ll  long long\n#define br  '\\n'\n\nll n, q, l, r, k, a, add, sum, acc, ans;\n\nvoid solve() {\n   cin >> n >> q;\n   vector<ll> v(n + 1);\n   add = 0;\n   for (int i = 1; i <= n; i++) {\n      cin >> v[i];\n      add += v[i];\n   }\n   vector<ll> b(v);\n   sort(b.begin(), b.end());\n   if (b[1] == b[n]) {\n      for (int i = 0; i < q; i++) {\n         cin >> l >> r >> k;\n         sum = add - b[1] * (r - l + 1);\n         a = k * (r - l + 1);\n         ans = sum + a;\n         cout << (ans % 2 == 1 ? \"YES\" : \"NO\") << br;\n      }\n      return;\n   }\n   for (int j = 0; j < q; j++) {\n      cin >> l >> r >> k;\n      acc = 0;\n      for (int i = l; i <= r; i++) acc += v[i];\n      sum = add - acc;\n      a = k * (r - l + 1);\n      ans = sum + a;\n      cout << (ans % 2 == 1 ? \"YES\" : \"NO\") << br;\n   }\n}\n\nint main() {\n   ios::sync_with_stdio(false);\n   cin.tie(0);\n   int tt = 1;\n   cin >> tt;\n   while (tt--) solve();\n   return 0;\n}\n",
+            "expected": [
+                ""
+            ],
+            "filePath": "/home/ljr3/workspace/codeforces/src/900/4a_cp.cpp",
+            "horizontalScrollBarValue": 0,
+            "input": [
+                ""
+            ],
+            "isLanguageSet": true,
+            "language": "C++",
+            "problemURL": "",
+            "savedText": "// Powered by CP Editor (https://cpeditor.org)\n// author:  josuerom\n// created: 10/03/2024 14:49:06\n\n#include <bits/stdc++.h>\nusing namespace std;\n\n#define ll  long long\n#define br  '\\n'\n\nll n, q, l, r, k, a, add, sum, acc, ans;\n\nvoid solve() {\n   cin >> n >> q;\n   vector<ll> v(n + 1);\n   add = 0;\n   for (int i = 1; i <= n; i++) {\n      cin >> v[i];\n      add += v[i];\n   }\n   vector<ll> b(v);\n   sort(b.begin(), b.end());\n   if (b[1] == b[n]) {\n      for (int i = 0; i < q; i++) {\n         cin >> l >> r >> k;\n         sum = add - b[1] * (r - l + 1);\n         a = k * (r - l + 1);\n         ans = sum + a;\n         cout << (ans % 2 == 1 ? \"YES\" : \"NO\") << br;\n      }\n      return;\n   }\n   for (int j = 0; j < q; j++) {\n      cin >> l >> r >> k;\n      acc = 0;\n      for (int i = l; i <= r; i++) acc += v[i];\n      sum = add - acc;\n      a = k * (r - l + 1);\n      ans = sum + a;\n      cout << (ans % 2 == 1 ? \"YES\" : \"NO\") << br;\n   }\n}\n\nint main() {\n   ios::sync_with_stdio(false);\n   cin.tie(0);\n   int tt = 1;\n   cin >> tt;\n   while (tt--) solve();\n   return 0;\n}\n",
+            "testCaseSplitterStates": [
+                [
+                    198,
+                    198,
+                    198
+                ]
+            ],
+            "testcasesIsShow": [
+                true
+            ],
+            "timestamp": 1710537445397,
+            "untitledIndex": 1,
+            "verticalScrollbarValue": 0
+        }
+    ]
+}
