@@ -1,0 +1,26 @@
+{
+  "template": [
+    {
+      "alias": "cpp",
+      "lang": "54",
+      "path": "~/workspace/contest/TEMPLATES/tem_cf.cpp",
+      "suffix": [
+        "cpp"
+      ],
+      "before_script": "g++ $%full%$ -o $%file%$ -std=c++17 -DLOCAL -O2",
+      "script": "./$%file%$",
+      "after_script": ""
+    }
+  ],
+  "default": 0,
+  "gen_after_parse": true,
+  "host": "https://codeforces.com",
+  "proxy": "",
+  "folder_name": {
+    "acmsguru": ".",
+    "contest": ".",
+    "group": ".",
+    "gym": ".",
+    "root": "."
+  }
+}
