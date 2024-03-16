@@ -12,7 +12,7 @@ Este script de bash realiza varias tareas relacionadas con la configuración del
 
 Actualiza los repositorios del sistema y realiza una actualización completa del sistema.
 
-1. Instala varios paquetes y herramientas utilizando el gestor de paquetes apt. Los paquetes instalados son: `curl, wget, vim, ranger, htop, cmatrix, g++, default-jdk, default-jre y snapd`.
+1. Instala varios paquetes y herramientas utilizando el gestor de paquetes apt. Los paquetes instalados son: `curl, wget, xclip, vim, ranger, htop, cmatrix, g++, default-jdk, default-jre y snapd`.
 2. Elimina el navegador web `firefox` usando apt purge.
 3. opia los archivos de fuentes (`.fonts`) al directorio de fuentes del sistema (`/usr/share/fonts/`).
 4. Instala varias aplicaciones usando snap: `chromium, spotify, notion-snap-reborn, teams-for-linux y code`.
