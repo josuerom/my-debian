@@ -19,10 +19,10 @@ autocmd FileType java :call RunJava()
 " ejecutar con entrada manual. <shift + F6>
 " para c++
 function! RunCpp()
-   nmap <f5> :w<CR> :!clear && g++ -std=c++17 -DLOCAL % -o ~/workspace/bin/sol<CR>
-   imap <f5> <Esc> :w<CR> :!clear && g++ -std=c++17 -DLOCAL % -o ~/workspace/bin/sol<CR>
-   nmap <C-F6> :w<CR> :!clear && ~/workspace/bin/sol<CR>
-   imap <C-F6> <Esc> :w<CR> :!clear && ~/workspace/bin/sol<CR>
+   nmap <f5> :w<CR> :!clear && g++ -std=c++17 -O2 -DLOCAL % -o ~/workspace/bin/sol<CR>
+   imap <f5> <Esc> :w<CR> :!clear && g++ -std=c++17 -O2 -DLOCAL % -o ~/workspace/bin/sol<CR>
+   nmap <C-r> :w<CR> :!clear && ~/workspace/bin/sol<CR>
+   imap <C-r> <Esc> :w<CR> :!clear && ~/workspace/bin/sol<CR>
    nmap <f6> :w<CR> :!clear && ~/workspace/bin/sol <in1
    imap <f6> <Esc> :w<CR> :!clear && ~/workspace/bin/sol <in1
    nmap <f7> :w<CR> :tabnew in1
@@ -34,8 +34,8 @@ endfunction
 " ejecutar con entrada manual. <shift + F6>
 " para java >= 11
 function! RunJava()
-   nmap <C-F6> :w<CR> :!clear && java %<CR>
-   imap <C-F6> <Esc> :w<CR> :!clear && java %<CR>
+   nmap <C-r> :w<CR> :!clear && java %<CR>
+   imap <C-r> <Esc> :w<CR> :!clear && java %<CR>
    nmap <f6> :w<CR> :!clear && java % <in1
    imap <f6> <Esc> :w<CR> :!clear && java % <in1
    nmap <f7> :w<CR> :tabnew in1
