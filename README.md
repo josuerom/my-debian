@@ -1,10 +1,10 @@
-# Dotfiles Debian Linux
+# Dotfiles Debian JR3.
 
 ## Ejecute
 ```bash
-git clone https://github.com/josuerom/DEBIAN_JOSUEROM.git ~/
-cd ~/DEBIAN_JOSUEROM
-sudo chmod 777 install.sh
+git clone https://github.com/josuerom/my-debian.git ~/JR3Debian
+cd ~/JR3Debian
+sudo chmod +x .install.sh
 ./install.sh
 ```
 
@@ -19,6 +19,3 @@ Actualiza los repositorios del sistema y realiza una actualización completa del
 5. Instala dos paquetes .deb ubicados en los directorios `.deb-install/`: `ulauncher_5.15.6_all.deb y cpeditor-6.11.2-linux-amd64.deb`.
 6. Mueve un archivo llamado cf al directorio `/bin/`.
 7. Mueve todos los archivos y directorios ocultos (cuyo nombre comienza con un punto) en el directorio actual al directorio del usuario (`~/`).
-
-
-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
