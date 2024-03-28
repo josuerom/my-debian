@@ -1,12 +1,11 @@
 #!/bin/bash
-echo -e "\nHola Hackermen! script creado por @josuerom!\n"
+echo -e "\nHola Hackermen! script creado por @josuerom!"
+echo -e "Las instalaciones solo funcionan en Debian Linux\n"
 
 sudo apt update -y && sudo apt upgrade -y
 sudo apt install curl wget xclip vim ranger htop cmatrix g++ default-jdk default-jre snapd -y
-
 sudo apt purge firefox -y
 sudo cp -r .fonts/* /usr/share/fonts/
-
 sudo snap install chromium
 sudo snap install spotify
 sudo snap install notion-snap-reborn
@@ -19,4 +18,4 @@ sudo mv cf /bin/
 sudo mv .* ~/
 mkdir -p ~/workspace ~/workspace/bin
 
-echo -e "\nLISTO ya ha terminado todo de instalarse, configure."
+echo -e "\nLISTO ya ha terminado todo de instalarse, ahora configure."
