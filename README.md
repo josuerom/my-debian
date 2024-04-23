@@ -2,7 +2,7 @@
 
 ## Ejecute
 ```bash
-git clone https://github.com/josuerom/my-debian.git ~/JR3Debian && cd ~/JR3Debian && sudo chmod +x ./install.sh && ./install.sh
+git clone https://github.com/josuerom/my-debian.git ~/debian-config && cd ~/debian-config && sudo chmod +x ./install.sh && ./install.sh
 ```
 
 Este script de bash realiza varias tareas relacionadas con la configuración del sistema y la instalación de software. Aquí está el resumen de lo que hace, sin incluir los mensajes de salida:
