@@ -34,7 +34,7 @@ alias pytester='python3 ~/Workspace/contest/AUTO/un_tester.py'
 alias runpy='run() { python3 $1; }; run'
 alias runjava='run() { java $1; }; run'
 alias runcpp='compile_run() { g++ -std=c++17 -O2 -DLOCAL $1 -o ~/Workspace/bin/exe && ~/Workspace/bin/exe; }; compile_run'
-alias token='cat ~/.local/status/token | xclip -selection clipboar'
+alias token='cat ~/.local/share/.token | xclip -selection clipboar'
 
 # Git alias
 alias gi='git init'
