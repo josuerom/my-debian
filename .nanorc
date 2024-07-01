@@ -1,0 +1,13 @@
+include "/usr/share/nano/*.nanorc"
+
+set tabsize 3
+set linenumbers
+set mouse
+set autoindent
+set fill 90
+set matchbrackets "(<[{)>]}"
+set showcursor
+set trimblanks
+
+bind ^s writeout main
+bind ^q exit all
